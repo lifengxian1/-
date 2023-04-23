@@ -1,0 +1,14 @@
+import os
+
+file = open("pwd.txt","r")
+file2 = open("res.txt","w")
+for line in file:
+    pwd = line.strip("\n")
+    res = os.popen
+    print(pwd)
+    if(res.read().startswith("CORRECT")):
+        file2.write(pwd)
+        break
+
+file.close()
+file2.close()

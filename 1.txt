@@ -1,0 +1,17 @@
+import string
+
+arr = []
+for i in range(0,10):
+    arr.append(str(i))
+
+for i in string.lowercase:
+    arr.append(i)
+
+file = open("pwd.txt","w")
+for i in arr:
+    for j in arr:
+        for k in arr:
+            pwd = i + j + k
+            file.write(pwd + "\n")
+
+file.close()
